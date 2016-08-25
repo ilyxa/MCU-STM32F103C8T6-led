@@ -25,6 +25,7 @@ int main(void)
 	clock_setup();
 	gpio_setup();
 
+
 	while (1) { 
 		gpio_toggle(GPIOC, GPIO13);	/* LED on/off */ // GPIOC!!!!
 		for (i = 0; i < 8000000; i++)	/* Wait a bit. */
