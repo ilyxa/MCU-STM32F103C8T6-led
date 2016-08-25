@@ -20,3 +20,8 @@ make
 
 make flash
 
+# Making some debug (check opencm3.mk for few details)
+
+st-util -v0 &
+
+arm-none-eabi-gdb # (and target remote localhost:4242 , file led.elf , load , c)
